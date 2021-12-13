@@ -17,12 +17,12 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "resolutions": {
-    "graceful-fs": "4.2.8",
+    "graceful-fs": "^4.2.8",
     "axios": "^0.24.0",
     "glob-parent": "^6.0.2",
     "set-value": "^4.1.0",
     "ansi-regex": "^5.0.1",
-    "yargs-parser": "21.0.0",
+    "yargs-parser": "^21.0.0",
     "qs": "^6.10.2",
     "kind-of": "^6.0.3",
     "extend": "^3.0.2",
