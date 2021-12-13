@@ -40,7 +40,7 @@ gulp.task("postcss", function() {
     }),
     require("postcss-nested"),
     require("postcss-custom-properties"),
-    require("autoprefixer")({ browsers: ["last 2 years"] }),
+    require("autoprefixer")({ overrideBrowserslist: ["last 2 years"] }),
     require("cssnano")({
       preset: ["default"],
       discardComments: {

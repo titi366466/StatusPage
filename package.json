@@ -3,7 +3,7 @@
   "description": "一款基于 UptimeRobot 中文状态监测页",
   "version": "0.2.0",
   "main": "build/bootstrap/app.js",
-  "repository": "https://github.com/XOS/StatusPage.git",
+  "repository": "https://github.com/xOS/StatusPage.git",
   "author": "佩佩 <admin@nange.cn>",
   "license": "GPL-3.0",
   "scripts": {
@@ -32,9 +32,9 @@
     "minimatch": "^3.0.2",
     "lodash": "^4.17.21"
   },
-  "homepage": "https://github.com/XOS/StatusPage",
+  "homepage": "https://github.com/xOS/StatusPage",
   "bugs": {
-    "url": "https://github.com/XOS/StatusPage/issues"
+    "url": "https://github.com/xOS/StatusPage/issues"
   },
   "engines": {
     "node": ">=10"
@@ -59,13 +59,12 @@
     "@babel/core": "^7.16.0",
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^9.1.0",
     "ava": "4.0.0-rc.1",
     "browser-sync": "^2.27.7",
     "cheerio": "^1.0.0-rc.10",
     "codecov": "^3.8.3",
-    "cssnano": "^5.0.12",
-    "eslint": "^8.4.1",
+    "cssnano": "^4.1.11",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
@@ -83,10 +82,11 @@
     "nock": "^13.2.1",
     "normalize.css": "^8.0.1",
     "nyc": "^15.1.0",
+    "postcss": "^8.4.5",
     "postcss-assets": "^6.0.0",
-    "postcss-custom-properties": "^12.0.0",
+    "postcss-custom-properties": "^9.2.0",
     "postcss-debug": "^0.4.2",
-    "postcss-import": "^14.0.2",
+    "postcss-import": "^13.0.0",
     "postcss-nested": "^5.0.6",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
