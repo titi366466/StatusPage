@@ -9,7 +9,7 @@ const LEVEL = Map({
   ignore: 4
 });
 
-const time = () => format(Date.now(), "YYYY/MM/DD HH:mm:ss");
+const time = () => format(Date.now(), "yyyy/MM/dd HH:mm:ss");
 
 class Logger {
   constructor(level = "debug") {

@@ -15,7 +15,7 @@ function lastDays(distance) {
 for (let i = -distance; i <= 0; i++) {
     const day0 = addDays(now, i);
     const day1 = addSeconds(addDays(day0, 1), -1);
-    dates.push(format(day0, "YYYY年MM月DD日"));
+    dates.push(format(day0, "yyyy年MM月dd日"));
     ranges.push(`${getTime(day0)}_${getTime(day1)}`);
   }
   return { dates, ranges: ranges.join("-") };
@@ -37,7 +37,7 @@ export default class UptimeRobotService {
       sum: {
         // total: 0,
         down: 0,
-        checktime: format(Date.now(), "YYYY年MM月DD日 HH:mm")
+        checktime: format(Date.now(), "yyyy年MM月dd日 HH:mm")
       },
       groups: [
         /**
