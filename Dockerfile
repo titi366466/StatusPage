@@ -1,4 +1,4 @@
-FROM node:16.3.0-alpine AS BUILDER
+FROM node: alpine AS BUILDER
 WORKDIR /app
 
 COPY package.json yarn.lock ./
@@ -6,7 +6,7 @@ RUN yarn install && yarn cache clean
 COPY . .
 RUN yarn build
 
-FROM node:16.3.0-alpine
+FROM node: alpine
 
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
