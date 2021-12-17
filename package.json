@@ -36,9 +36,6 @@
   "bugs": {
     "url": "https://github.com/xOS/StatusPage/issues"
   },
-  "engines": {
-    "node": ">=10"
-  },
   "dependencies": {
     "config": "^3.3.6",
     "cron": "^1.8.2",
