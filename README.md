@@ -3,7 +3,8 @@
 > 一款基于 [UptimeRobot](https://uptimerobot.com/) 中文状态监测页
 
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/nangle/status-page?style=flat-square)](https://hub.docker.com/r/nangle/status-page/)
-[![GitHub](https://img.shields.io/github/license/xos/StatusPage?style=flat-square)](https://github.com/XOS/StatusPage/blob/master/LICENSE)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/xOS/StatusPage/Push%20Docker%20Image?&logo=github&style=flat-square)
+[![GitHub](https://img.shields.io/github/license/xOS/StatusPage?style=flat-square)](https://github.com/XOS/StatusPage/blob/master/LICENSE)
 
 ## 修改说明
 * 前端改为中文显示；
