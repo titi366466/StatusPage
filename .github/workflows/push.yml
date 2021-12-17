@@ -12,11 +12,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [14]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
 
@@ -45,11 +41,6 @@ jobs:
         
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2.5.0
-        with:
-          node-version: ${{ matrix.node-version }}
       
       - name: Set up image name
         run: |
