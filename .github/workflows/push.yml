@@ -10,9 +10,18 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [14]
     steps:
       - uses: actions/checkout@master
+      
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.5.0
+        with:
+          node-version: ${{ matrix.node-version }}
 
       - name: Log in to the GHCR
         uses: docker/login-action@master
