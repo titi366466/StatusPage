@@ -37,7 +37,7 @@
     "url": "https://github.com/xOS/StatusPage/issues"
   },
   "engines": {
-    "node": ">=11"
+    "node": ">=10"
   },
   "dependencies": {
     "config": "^3.3.6",

@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - "v*"
+    branches:
+      - "master"
     paths-ignore:
       - "*.md"
       - ".*"
@@ -17,11 +19,6 @@ jobs:
         node-version: [14]
     steps:
       - uses: actions/checkout@master
-      
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2.5.0
-        with:
-          node-version: ${{ matrix.node-version }}
 
       - name: Log in to the GHCR
         uses: docker/login-action@master
@@ -48,6 +45,11 @@ jobs:
         
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.5.0
+        with:
+          node-version: ${{ matrix.node-version }}
       
       - name: Set up image name
         run: |
@@ -55,7 +57,7 @@ jobs:
           DOC_IMAGE_NAME=$(echo "nangle/status-page" | tr '[:upper:]' '[:lower:]')
           if [ ${{ github.repository_owner }} = "xOS" ]
             then ALI_IMAGE_NAME=$(echo "registry.cn-shanghai.aliyuncs.com/dns/status-page")
-            else ALI_IMAGE_NAME=$(echo "registry.cn-shanghai.aliyuncs.com/${{ github.repository_owner }}/probe-dashboard" | tr '[:upper:]' '[:lower:]')
+            else ALI_IMAGE_NAME=$(echo "registry.cn-shanghai.aliyuncs.com/${{ github.repository_owner }}/status-page" | tr '[:upper:]' '[:lower:]')
           fi
           echo "::set-output name=GHRC_IMAGE_NAME::$GHRC_IMAGE_NAME"
           echo "::set-output name=ALI_IMAGE_NAME::$ALI_IMAGE_NAME"
