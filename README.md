@@ -16,7 +16,7 @@
 
 ## 效果展示
 
-![](https://cdn.jsdelivr.net/gh/XOS/StatusPage@master/status.nange.cn.png)
+![](https://i.cdn.ink/views/a6b6d7.png)
 
 ## 常规环境下部署使用
 
