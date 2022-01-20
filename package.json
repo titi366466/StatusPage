@@ -31,8 +31,7 @@
         "lodash.template": "^4.5.0",
         "minimatch": "^3.0.2",
         "lodash": "^4.17.21",
-        "follow-redirects": "^1.14.7",
-        "postcss": "^8.4.5"
+        "follow-redirects": "^1.14.7"
     },
     "homepage": "https://github.com/xOS/StatusPage",
     "bugs": {
