@@ -38,7 +38,7 @@
         "url": "https://github.com/xOS/StatusPage/issues"
     },
     "dependencies": {
-        "config": "^3.3.6",
+        "config": "^3.3.7",
         "cron": "^1.8.2",
         "date-fns": "^2.27.0",
         "dotenv": "^10.0.0",
@@ -65,7 +65,7 @@
         "cssnano": "^5.0.15",
         "eslint-config-prettier": "^8.3.0",
         "eslint-config-standard": "^16.0.3",
-        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-import": "^2.25.4",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-promise": "^5.2.0",
