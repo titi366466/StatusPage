@@ -3,9 +3,9 @@ mixin monitorStatus(status)
     when 2
       .icon.icon-status.up(title="正常")
     when 8
-      .icon.icon-status.seem-down(title="有故障")
+      .icon.icon-status.seem-down(title="波动")
     when 9
-      .icon.icon-status.down(title="宕机")
+      .icon.icon-status.down(title="异常")
     default
       .icon.icon-status.pause(title="无数据")
 
@@ -44,13 +44,11 @@ html
                 .icon.icon-status-sum.up
               div(style="letter-spacing:-0.5px;")
                 if (data.sum.down > 0)
-                  if (data.sum.down == 1)
-                    .summary-detail="有 " + data.sum.down + " 个服务宕机！"
                   else
-                    .summary-detail="有 " + data.sum.down + " 个服务宕机！"
+                    .summary-detail="有 " + data.sum.down + " 个服务异常！"
                 else
-                  .summary-detail="服务运行正常。"
-                .summary-checktime="当前时间 " + data.sum.checktime +" GMT+08:00"
+                  .summary-detail="所有服务正常。"
+                .summary-checktime="时间 " + data.sum.checktime +" GMT+08:00"
 
       section.content
         .container
@@ -90,7 +88,7 @@ html
             .copyright!="&copy; " + config.copyright
 
       script(src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tippy.js/2.2.0/tippy.all.min.js")
-      script("%c%c楠格%chttps://www.nange.cn", "line-height:28px;", "line-height:28px;padding:4px;background:#2ccbe6;color:#FADFA3;font-size:14px;", "padding:4px 4px 4px 2px;background:#ff146d;color:green;line-height:28px;font-size:12px;")
+      script("%c%c楠格%chttp://www.nange.cn", "line-height:28px;", "line-height:28px;padding:4px;background:#2ccbe6;color:#FADFA3;font-size:14px;", "padding:4px 4px 4px 2px;background:#ff146d;color:green;line-height:28px;font-size:12px;")
       script
         include ../public/js/open.js
         include ../public/js/tippy.js
