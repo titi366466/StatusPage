@@ -56,7 +56,7 @@ jobs:
         id: image-name
         
       - name: Build dasbboard image And Push
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: .
           file: ./Dockerfile
