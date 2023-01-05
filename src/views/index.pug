@@ -70,7 +70,7 @@ html
                         .monitor-uptime-range
                           span="最近 " + monitor.uptime.length + " 天"+"可用率 "
                               strong=monitor.totalUptime+ "% "
-                          strong="今天"
+                          strong="当前"
                         .monitor-uptimes
                           each uptime in monitor.uptime
                             +uptime(uptime)
