@@ -21,7 +21,6 @@
 
 ```bash
 git clone https://github.com/XOS/StatusPage.git && cd StatusPage
-npm i
 yarn install && yarn cache clean
 yarn build
 ```
