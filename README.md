@@ -15,7 +15,7 @@
 
 ## 效果展示
 
-![](https://i.cdn.ink/views/2022/05/25/e3c6f3.png)
+![](https://i.qste.com/views/2022/05/25/e3c6f3.png)
 
 ## 常规环境下部署使用
 
