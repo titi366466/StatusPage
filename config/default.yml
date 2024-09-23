@@ -5,7 +5,7 @@ app:
   crontime: "*/1 * * * *"
 
 uptimerobot:
-  api_key: 
+  api_key:  u2580262-a75d09cc5ca27ac208d3a459
   pattern: "%group/%index/%name"
   statuses: "2-9"
 
